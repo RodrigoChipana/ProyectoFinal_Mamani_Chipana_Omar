@@ -1,0 +1,160 @@
+@import 'default';
+@mixin flexrowcenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+@mixin flexcolcenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+@media only screen and (max-width: 480px){
+    
+            #cuerpo{
+                display: grid;
+                grid-template-areas: 
+                "subtitulo"
+                "formulario"
+                "termino"
+                "boton"
+                ;
+                grid-template-columns: 100%;
+                grid-template-rows: 15% 55% 10% 20%;
+                height: 540px;
+                width: 100%;
+                font-family: 'Open Sans', sans-serif;
+                color: rgb(0, 0, 0);
+                    }
+                    subtitulo{
+                        grid-area: subtitulo;
+                    }
+                    formulario{
+                        grid-area: formulario;
+                    }
+                    termino{
+                        grid-area: termino;
+                    }
+                    boton{
+                        grid-area: boton;
+                    }
+            
+            div.formulario{
+                @include flexcolcenter;
+                padding-top: 10px;
+                font-size: 16px;
+                }
+            div.termino{
+                @include flexcolcenter;
+                form{
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    input{margin: 0%; padding: 0%;}
+                }
+            }
+            div.boton{
+                @include flexcolcenter;
+                margin-left: 35%;
+                width: 30%;
+                }
+}
+@media only screen and (min-width: 481px) and (max-width: 800px)
+{
+    #cuerpo{
+        display: grid;
+        grid-template-areas: 
+        "subtitulo"
+        "formulario"
+        "termino"
+        "boton"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 55% 10% 20%;
+        height: 615px;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        
+        color: rgb(0, 0, 0);
+            }
+            subtitulo{
+                grid-area: subtitulo;
+            }
+            formulario{
+                grid-area: formulario;
+            }
+            termino{
+                grid-area: termino;
+            }
+            boton{
+                grid-area: boton;
+            }
+    
+    div.formulario{
+        @include flexcolcenter;
+        padding-top: 10px;
+        font-size: 16px;
+        }
+    div.termino{
+        @include flexcolcenter;
+        form{
+            font-size: 14px;
+            color: #FFFFFF;
+            input{margin: 0%; padding: 0%;}
+        }
+    }
+    div.boton{
+        @include flexcolcenter;
+        margin-left: 40%;
+        width: 22%;
+        }
+}
+@media only screen and (min-width: 801px){
+    #cuerpo{
+        display: grid;
+        grid-template-areas: 
+        "subtitulo"
+        "formulario"
+        "termino"
+        "boton"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 55% 10% 20%;
+        height: 615px;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(0, 0, 0);
+            }
+            subtitulo{
+                grid-area: subtitulo;
+            }
+            formulario{
+                grid-area: formulario;
+            }
+            termino{
+                grid-area: termino;
+            }
+            boton{
+                grid-area: boton;
+            }
+    div.formulario{
+        @include flexrowcenter;
+        padding-top: 10px;
+        font-size: 16px;
+        }
+    div.termino{
+        @include flexcolcenter;
+        form{
+            font-size: 14px;
+            color: #FFFFFF;
+            input{margin: 0%; padding: 0%;}
+        }
+    }
+    div.boton{
+        @include flexcolcenter;
+        margin-left: 44%;
+        width: 12%;
+        }
+}
+            

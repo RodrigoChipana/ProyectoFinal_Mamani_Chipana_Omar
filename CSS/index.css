@@ -1,0 +1,304 @@
+/*Celular*/
+@media only screen and (max-width: 480px) {
+  #cuerpo {
+    display: grid;
+    grid-template-areas: "buscador" "principal" "seccionuno" "secciondos" "secciontres";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 20% 20% 20% 20%;
+    height: 800px; }
+  buscador {
+    grid-area: buscador; }
+  principal {
+    grid-area: principal; }
+  seccionuno {
+    grid-area: seccionuno; }
+  secciondos {
+    grid-area: secciondos; }
+  secciontres {
+    grid-area: secciontres; }
+  /*Main de Index*/
+  .cuerpoindex {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    align-items: center;
+    /*Buscador*/
+    /*Slider*/
+    /*Seccion de miniaturas*/ }
+    .cuerpoindex div.buscador {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center; }
+      .cuerpoindex div.buscador div.espa1 {
+        width: 5%; }
+      .cuerpoindex div.buscador div.bus {
+        width: 90%;
+        padding: 8px 3% 8px 3%; }
+      .cuerpoindex div.buscador div.espa2 {
+        width: 5%; }
+    .cuerpoindex div.slider {
+      margin: auto;
+      overflow: hidden;
+      /*Ajusta para que la imagen no salga del div*/
+      width: 100%; }
+    .cuerpoindex div.seccion {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: #000000; }
+      .cuerpoindex div.seccion div.semititulo {
+        padding-left: 2%;
+        font-size: 18px;
+        border-top: 4px #acb8b0 solid;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500; }
+      .cuerpoindex div.seccion nav.navminiaturas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding-top: 5px; }
+        .cuerpoindex div.seccion nav.navminiaturas div.miniaturas {
+          margin-left: 5%;
+          margin-right: 5%;
+          background: #ECE9E6;
+          /* fallback for old browsers */
+          background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+          /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          border: ridge 3px #daa520;
+          border-radius: 10%;
+          font-size: 16px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          text-align: center;
+          height: 110px;
+          overflow: hidden;
+          box-shadow: 0px 1px 10px black;
+          cursor: default;
+          transition: all 400ms ease; }
+          .cuerpoindex div.seccion nav.navminiaturas div.miniaturas .miniatura {
+            width: 80px;
+            height: 80px; }
+        .cuerpoindex div.seccion nav.navminiaturas div.desaparecer {
+          display: none !important; }
+        .cuerpoindex div.seccion nav.navminiaturas div.precio {
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          text-align: end; }
+        .cuerpoindex div.seccion nav.navminiaturas .miniaturas:hover {
+          box-shadow: 5px 5px 20px black;
+          transform: translate(-3%); } }
+
+/*Netbook*/
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
+  #cuerpo {
+    display: grid;
+    grid-template-areas: "buscador" "principal" "seccionuno" "secciondos" "secciontres";
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 29% 20% 20% 20%;
+    height: 1500px; }
+  buscador {
+    grid-area: buscador; }
+  principal {
+    grid-area: principal; }
+  seccionuno {
+    grid-area: seccionuno; }
+  secciondos {
+    grid-area: secciondos; }
+  secciontres {
+    grid-area: secciontres; }
+  /*Main de Index*/
+  .cuerpoindex {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    align-items: center;
+    /*Buscador*/
+    /*Slider*/
+    /*Seccion de miniaturas*/ }
+    .cuerpoindex div.buscador {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center; }
+      .cuerpoindex div.buscador div.espa1 {
+        width: 10%; }
+      .cuerpoindex div.buscador div.bus {
+        width: 80%;
+        padding: 8px 13% 8px 13%; }
+      .cuerpoindex div.buscador div.espa2 {
+        width: 10%; }
+    .cuerpoindex div.slider {
+      margin: auto;
+      overflow: hidden;
+      /*Ajusta para que la imagen no salga del div*/
+      width: 100%; }
+      .cuerpoindex div.slider .navgrande {
+        width: 105px;
+        height: 425px; }
+    .cuerpoindex div.seccion {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: #000000; }
+      .cuerpoindex div.seccion div.semititulo {
+        padding-left: 2%;
+        font-size: 22px;
+        border-top: 4px #acb8b0 solid;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500; }
+      .cuerpoindex div.seccion nav.navminiaturas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding-top: 5px; }
+        .cuerpoindex div.seccion nav.navminiaturas div.miniaturas {
+          padding: 3px;
+          margin-left: 4%;
+          margin-right: 4%;
+          background: #ECE9E6;
+          /* fallback for old browsers */
+          background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+          /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          border: ridge 3px #daa520;
+          border-radius: 10%;
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          text-align: center;
+          height: 220px;
+          overflow: hidden;
+          box-shadow: 0px 1px 10px black;
+          cursor: default;
+          transition: all 400ms ease; }
+          .cuerpoindex div.seccion nav.navminiaturas div.miniaturas .miniatura {
+            width: 120px;
+            height: 120px;
+            border-radius: 10%; }
+        .cuerpoindex div.seccion nav.navminiaturas div.precio {
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          text-align: end; }
+        .cuerpoindex div.seccion nav.navminiaturas div.desaparecermedio {
+          display: none !important; }
+        .cuerpoindex div.seccion nav.navminiaturas .miniaturas:hover {
+          box-shadow: 5px 5px 20px black;
+          transform: translate(-3%); } }
+
+/*PC de escritorio*/
+@media only screen and (min-width: 1201px) {
+  #cuerpo {
+    display: grid;
+    grid-template-areas: "buscador" "principal" "seccionuno" "secciondos" "secciontres";
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 29% 20% 20% 20%;
+    height: 1500px; }
+  buscador {
+    grid-area: buscador; }
+  principal {
+    grid-area: principal; }
+  seccionuno {
+    grid-area: seccionuno; }
+  secciondos {
+    grid-area: secciondos; }
+  secciontres {
+    grid-area: secciontres; }
+  /*Main de Index*/
+  .cuerpoindex {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    align-items: center;
+    /*Buscador*/
+    /*Slider*/
+    /*Seccion de miniaturas*/ }
+    .cuerpoindex div.buscador {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center; }
+      .cuerpoindex div.buscador div.espa1 {
+        width: 10%; }
+      .cuerpoindex div.buscador div.bus {
+        width: 80%;
+        padding: 8px 13% 8px 13%; }
+      .cuerpoindex div.buscador div.espa2 {
+        width: 10%; }
+    .cuerpoindex div.slider {
+      margin: auto;
+      overflow: hidden;
+      /*Ajusta para que la imagen no salga del div*/
+      width: 100%; }
+      .cuerpoindex div.slider .navgrande {
+        width: 105px;
+        height: 425px; }
+    .cuerpoindex div.seccion {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: #000000; }
+      .cuerpoindex div.seccion div.semititulo {
+        padding-left: 2%;
+        font-size: 22px;
+        border-top: 4px #acb8b0 solid;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500; }
+      .cuerpoindex div.seccion nav.navminiaturas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding-top: 5px; }
+        .cuerpoindex div.seccion nav.navminiaturas div.miniaturas {
+          padding: 8px 4px 4px 4px;
+          margin-left: 3%;
+          margin-right: 3%;
+          background: #ECE9E6;
+          /* fallback for old browsers */
+          background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+          /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          border: ridge 3px #daa520;
+          border-radius: 10%;
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          text-align: center;
+          height: 220px;
+          overflow: hidden;
+          box-shadow: 0px 1px 10px black;
+          cursor: default;
+          transition: all 400ms ease; }
+          .cuerpoindex div.seccion nav.navminiaturas div.miniaturas .miniatura {
+            width: 130px;
+            height: 130px;
+            border-radius: 10%; }
+        .cuerpoindex div.seccion nav.navminiaturas div.precio {
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          text-align: end; }
+        .cuerpoindex div.seccion nav.navminiaturas .miniaturas:hover {
+          box-shadow: 5px 5px 20px black;
+          transform: translate(-3%); } }

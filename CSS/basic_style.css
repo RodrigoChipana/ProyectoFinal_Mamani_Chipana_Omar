@@ -444,5 +444,20 @@ body{margin: 0%;}
             width: 700px;
             height: 600px;
         }
+
+        /*Estilo de carrito */
+
+        .producto_style{
+            background: white;
+            height: 430px;
+            margin-top: 8%;
+            margin-left: 24%;
+            padding: 5%;
+            font-size: 24px;
+            text-align: left;
+        }   
+        .separacion{
+            margin: 5px;
+        }
 }
 

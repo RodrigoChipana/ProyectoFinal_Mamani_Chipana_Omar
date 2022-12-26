@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina de iniciar sesion ">
-    <meta name="keywords" content="UNIQUE, INICIAR, SESION, INGRESAR">
-    <title>Iniciar sesion - Unique</title>
+    <meta name="description" content="Pagina online de venta de productos usados en buen estado ">
+    <meta name="keywords" content="UNIQUE, PRODUCTOS, USADOS, BUEN, ESTADO, VENTA, BUZOS, PANTALONES, ZAPATILLAS, REMERAS">
+    <title>Unique</title>
     <link rel="stylesheet" href="CSS/basic_style.css">
-    <link rel="stylesheet" href="CSS/ingreso.css">
-    <!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="CSS/index.css">
+<!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    
 </head>
 <body>
-<!--Encabezado-->  
-<header id="encabezado">
+  <!--Encabezado-->  
+  <header id="encabezado">
     <div></div>
     <div></div>
     <div></div>
@@ -32,27 +30,24 @@
             <i class="uil uil-user-circle"></i>
         </a>
     </div>
-    <div class="shop iconos">
-        <a href="mantenimiento.html" style="text-decoration:none; color: white;">
-            <i class="uil uil-store-alt"></i>
-        </a>
+    <div class="container">
     </div>
-    <div class="sell iconos ocultar">
+    <div class="sell iconos ocultar" style="visibility: hidden">
         <a href="mantenimiento.html" style="text-decoration:none; color: white;">
             <i class="uil uil-tag-alt"></i>
         </a>
     </div>
     <div class="titulo"  >
         <h1 >
-            <a href="ingreso.html" class="titulo" style="color: #daa520 !important;">UNIQUE</a>
+            <a href="index.html" class="titulo" style="color: #daa520 !important;">UNIQUE</a>
         </h1>
     </div>
-    <div class="noti iconos">
-        <a href="mantenimiento.html" style="text-decoration:none; color: white;">
+    <div class="noti iconos"  style="visibility: hidden">
+        <a href="antenimiento.html" style="text-decoration:none; color: white;">
             <i class="uil uil-bell"></i>
         </a>
     </div>
-    <div class="ccolor iconos ocultar">
+    <div class="ccolor iconos ocultar"  style="visibility: hidden">
         <a href="mantenimiento.html" style="text-decoration:none; color: white;">
             <i class="uil uil-adjust"></i>
         </a>
@@ -64,7 +59,7 @@
       <ul class=" men dropdown-menu ">
         <li>
             <button class="dropdown-item border" type="button">
-            <a href="ingreso.html" style="text-decoration:none; color: black;">Ingresar</a>
+            <a href="mantenimiento.html" style="text-decoration:none; color: black;">Ingresar</a>
             </button>
         </li>
         <li>
@@ -87,36 +82,111 @@
     <div></div>
     <div></div>
 </header>
-    
-<!--CUERPO-->
-<main id="cuerpo">
-    <div class="subtitulo">
-        <h3>Bienvenido</h3>
-    </div>
-    <div class="formulario">
-        <div>
-            <form>
-                <input type="text " id="user"placeholder="Usuario" required="required">
-            </form>
+<!--Cuerpo-->
+    <section id="cuerpo" class="cuerpoindex">
+        <div class="buscador">
+            <div class="espa1"></div>
+            <div class="bus">
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-dark" type="submit" >Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+            </div>
+            <div class="espa2"></div>
         </div>
-        <div>
-            <form>
-                <input type="password" id="password"placeholder="Contrase&ntilde;a" required="required" >
-            </form>
+        <div class="principal slider">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active ">
+                    <img src="Imagenes/Principales/11.jpg" class="d-block w-100 navgrande" alt="producto1" >
+                  </div>
+                  <div class="carousel-item ajustarima">
+                    <img src="Imagenes/Principales/22.jpg" class="d-block w-100 navgrande" alt="producto2" >
+                  </div>
+                  <div class="carousel-item ajustarima">
+                    <img src="Imagenes/Principales/33.jpg" class="d-block w-100 navgrande" alt="producto3" >
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
-    </div>
-    <div class="ingresar">
-        <a href="mantenimiento.html" style="text-decoration:none;"><input type="submit" value="Iniciar" class="btn btn-secondary me-md-2 "></a>
-    </div>
-    <div class="texto">
-        <p>No tengo cuenta, deseo registrarme</p>
-    </div>
-    <div class="registrarse">
-        <a href="mantenimiento.html" style="text-decoration:none;"><input type="button" value="Crear cuenta" class="btn btn-secondary me-md-2 "></a>
-    </div>
-</main>
-    
-   
+        <div class="seccion seccionuno">
+            <div class="semititulo">Zapatillas</div>
+            <nav class="navminiaturas">
+                <div class="miniaturas">
+                    <a href="pages/productos/producto1.html"><img src="Imagenes/productos/zapatillas/1.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$2600</p>
+                </div>
+                <div class="miniaturas">
+                    <a href="pages/productos/producto2.html"><img src="Imagenes/productos/zapatillas/2.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$3300</p>
+                </div>
+                <div class="miniaturas">
+                    <a href="pages/productos/producto3.html"><img src="Imagenes/productos/zapatillas/3.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$3500</p>
+                </div>
+                <div class="miniaturas desaparecer">
+                    <a href="pages/productos/producto4.html"><img src="Imagenes/productos/zapatillas/4.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$3100</p>
+                </div>
+                <div class="miniaturas desaparecer desaparecermedio">
+                    <a href="pages/productos/producto5.html"><img src="Imagenes/productos/zapatillas/5.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$2800</p>
+                </div>
+                <div class="miniaturas desaparecer desaparecermedio">
+                    <a href="pages/productos/producto6.html"><img src="Imagenes/productos/zapatillas/6.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$2400</p>
+                </div>
+            </nav>
+        </div>
+        <div class="seccion secciondos">
+            <div class="semititulo">Camperas</div>
+            <nav class="navminiaturas">
+                <div class="miniaturas">
+                    <a href="pages/productos/producto7.html"><img src="Imagenes/productos/camperas/1.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$6500</p>
+                </div>
+                <div class="miniaturas">
+                    <a href="pages/productos/producto8.html"><img src="Imagenes/productos/camperas/2.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$3500</p>
+                </div>
+                <div class="miniaturas">
+                    <a href="pages/productos/producto9.html"><img src="Imagenes/productos/camperas/3.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$4500</p>
+                </div>
+                <div class="miniaturas desaparecer">
+                    <a href="pages/productos/producto10.html"><img src="Imagenes/productos/camperas/4.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$3800</p>
+                </div>
+                <div class="miniaturas desaparecer desaparecermedio">
+                    <a href="pages/productos/producto11.html"><img src="Imagenes/productos/camperas/5.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$4200</p>
+                </div>
+                <div class="miniaturas desaparecer desaparecermedio">
+                    <a href="pages/productos/producto12.html"><img src="Imagenes/productos/camperas/6.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$5500</p>
+                </div>
+            </nav>
+        </div>
+        <div class="seccion secciontres">
+            <div class="semititulo">Remeras</div>
+            <nav class="navminiaturas">
+                <div class="miniaturas">
+                    <a href="pages/productos/producto13.html"><img src="Imagenes/productos/remeras/1.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$540</p>
+                </div>
+                <div class="miniaturas">
+                    <a href="pages/productos/producto14.html"><img src="Imagenes/productos/remeras/2.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$400</p>
+                </div>
+                <div class="miniaturas">
+                    <a href="pages/productos/producto15.html"><img src="Imagenes/productos/remeras/3.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$230</p>
+                </div>
+                <div class="miniaturas desaparecer">
+                    <a href="pages/productos/producto16.html"><img src="Imagenes/productos/remeras/4.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$450</p>
+                </div>
+                <div class="miniaturas desaparecer desaparecermedio">
+                    <a href="pages/productos/producto17.html"><img src="Imagenes/productos/remeras/5.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$940</p>
+                </div>
+                <div class="miniaturas desaparecer desaparecermedio">
+                    <a href="pages/productos/producto18.html"><img src="Imagenes/productos/remeras/6.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$120</p>
+                </div>
+            </nav>
+        </div>
+    </section>
 <!--Pie-->
 <footer id="piesito">
     <div class="sigue ">
@@ -169,7 +239,7 @@
         </form>
         <br>
         <div class="boton">
-            <a href="mantenimiento.html" style="text-decoration:none;"><input type="submit" value="Suscribirse" class="btn btn-secondary me-md-2 "></a>
+            <a href="index.html" style="text-decoration:none;"><input type="submit" value="Suscribirse" class="btn btn-secondary me-md-2 "></a>
         </div>
         <br><br><br>
     </div>
@@ -199,6 +269,5 @@
     </div>
     <div></div>
 </footer>
-<script src="script.js"></script>
 </body>
 </html>
