@@ -30,12 +30,35 @@
             <i class="uil uil-user-circle"></i>
         </a>
     </div>
-    <div class="shop iconos">
-        <a href="../../mantenimiento.html" style="text-decoration:none; color: white;">
-            <i class="uil uil-store-alt"></i>
-        </a>
+    <div class="shop iconos container">
+            <div class="dropdown">
+                    <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="navbar-toggler-icon"><i class="uil uil-store-alt"></i></span>
+                    </button>
+                <ul class="dropdown-menu "  aria-labelledby="navbarCollapse" style="border:solid #daa520 2px;">
+                <li id="carrito" >
+                    <table id="lista-carrito" class="table ">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </li>
+                <li class="separacion">
+                    <a href="#" id="vaciar-carrito" class="btn btn-secondary btn-block">Limpiar Carrito</a>
+                </li>
+                <li class="separacion">
+                    <a href="#" id="procesar-pedido" class="btn btn-warning btn-block">Conrtinuar con la compra</a>
+                </li>
+                </ul>
+            </div>
     </div>
-    <div class="sell iconos ocultar">
+    <div class="sell iconos ocultar" style="visibility: hidden">
         <a href="../../mantenimiento.html" style="text-decoration:none; color: white;">
             <i class="uil uil-tag-alt"></i>
         </a>
@@ -45,12 +68,12 @@
             <a href="../../index.html" class="titulo" style="color: #daa520 !important;">UNIQUE</a>
         </h1>
     </div>
-    <div class="noti iconos">
+    <div class="noti iconos"  style="visibility: hidden">
         <a href="../../mantenimiento.html" style="text-decoration:none; color: white;">
             <i class="uil uil-bell"></i>
         </a>
     </div>
-    <div class="ccolor iconos ocultar">
+    <div class="ccolor iconos ocultar"  style="visibility: hidden">
         <a href="../../mantenimiento.html" style="text-decoration:none; color: white;">
             <i class="uil uil-adjust"></i>
         </a>
@@ -62,17 +85,17 @@
       <ul class=" men dropdown-menu ">
         <li>
             <button class="dropdown-item border" type="button">
-            <a href="../../ingreso.html" style="text-decoration:none; color: black;">Ingresar</a>
+            <a href="../../mantenimiento.html" style="text-decoration:none; color: black;">Ingresar</a>
             </button>
         </li>
         <li>
             <button class="dropdown-item" type="button">
-            <a href="../../crear_cuenta.html" style="text-decoration:none; color: black;">Crear cuenta</a>
+            <a href="../../mantenimiento.html" style="text-decoration:none; color: black;">Crear cuenta</a>
             </button>
         </li>
         <li>
             <button class="dropdown-item" type="button">
-            <a href="../../perfil.html" style="text-decoration:none; color: black;">Verificar perfil</a>
+            <a href="../../mantenimiento.html" style="text-decoration:none; color: black;">Verificar perfil</a>
             </button>
         </li>
       </ul>
@@ -129,41 +152,26 @@
             </button>
         </div>
 
-        <div class="card descp" >
-            <div class="card-body">
-              <h5 class="card-title">Remera 2022</h5>
-              <br>
-              <p class="card-text">Remera temporada invierno 2022</p>
+        <div class="container " style="width: 24rem;" id="lista-productos">
+            <div class="card-deck mb-3 text-center ">
+                    <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Remera</h4>
+                    </div>
+                    <div class="card-body producto_style">
+                        <img src="../../Imagenes/productos/remeras/3.jpg" class="card-img-top " height="0px">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">230</span></h1>
+    
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="list-group-item">Vendedor: User1</li>
+                            <li class="list-group-item">Talle: M - L - XL</li>
+                            <li class="list-group-item">Color: Unico</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-warning agregar-carrito" data-id="15">Añadir al carrito</a>
+                    </div>
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Vendedor: User1</li>
-              <li class="list-group-item">Talle: M - L - XL</li>
-              <li class="list-group-item">Color: Unico</li>
-              <li class="list-group-item precio">$4800</li>
-            </ul>
-            <div class="card-body sele">
-                <select name="Talle"aria-label="Talle">
-                    <option selected>Talle</option>
-                    <option value="1">M</option>
-                    <option value="2">L</option>
-                    <option value="3">XL</option>
-                </select>
-                <br>
-                <select name="Cantidad" aria-label="Cantidad">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="3">+3</option>
-                </select>
-                <br>
-                <a href="../../mantenimiento.html" class="btn btn-secondary">Comprar</a>
-            </div>
-            <ul class="list-group list-group-flush terminos">
-                <li class="list-group-item">Recuerde asegurarse de ingresar los datos correctamente para evitar devoluciónes.
-                </li>
-            </ul>
-          </div>
+        </div>
         
     </main>
 <!--Pie-->
@@ -248,5 +256,7 @@
     </div>
     <div></div>
 </footer>
+<script src="../../js/carrito.js"></script>
+<script src="../../js/pedido.js"></script>
 </body>
 </html>
