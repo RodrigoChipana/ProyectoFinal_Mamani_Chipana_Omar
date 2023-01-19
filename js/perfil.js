@@ -19,5 +19,17 @@ function validarFormulario2(e) {
     //paso mis resultados a string
     localStorage.setItem("verificacion", JSON.stringify(verificacion))
 
+      setTimeout(()=>{
+        swal({
+            title: "Verificacion completada",
+            text: "Gracias por confiar en nosotros!",
+            icon: "success",
+        });
+        setTimeout (()=>{
+        window.location = "index.html";
+        },3000)
+        },2000)
 }
+
+
 

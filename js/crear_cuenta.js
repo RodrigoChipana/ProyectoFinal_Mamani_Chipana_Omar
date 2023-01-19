@@ -18,5 +18,15 @@ function validarFormulario(e) {
     };
     //paso mis resultados a string
     localStorage.setItem("usuario", JSON.stringify(usuario))
-
+      setTimeout(()=>{
+        swal({
+            title: "Registro Completado",
+            text: "Gracias por confiar en nosotros!",
+            icon: "success",
+        });
+        setTimeout (()=>{
+        window.location = "index.html";
+        },3000)
+        },2000)
 }
+
