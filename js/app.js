@@ -16,11 +16,12 @@ if (activarFuncion) {
   activarFuncion.addEventListener("click", procesarPedido);
 }
 
-  document.addEventListener("DOMContentLoaded", () => {
-  carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
-  mostrarCarrito();
+document.addEventListener("DOMContentLoaded", () => {
+carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+mostrarCarrito();
+if (activarFuncion) {
   document.querySelector("#activarFuncion").click(procesarPedido);
+}
 });
 
 //Vaciar carrito
