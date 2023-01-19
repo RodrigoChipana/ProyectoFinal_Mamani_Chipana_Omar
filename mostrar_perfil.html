@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Pagina demntenimiento">
-        <meta name="keywords" content="UNIQUE, MANTENIMIENTO">
-        <title>Mantenimiento - Unique</title>
-        <link rel="stylesheet" href="CSS/basic_style.css">
-        <link rel="stylesheet" href="CSS/producto.css">
-        <!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina para crear una cuenta en unique ">
+    <meta name="keywords" content="UNIQUE, CREAR, CUENTA, NUEVA, REGISTRARSE">
+    <title>Mostrar Perfil - Unique</title>
+    <link rel="stylesheet" href="CSS/basic_style.css">
+    <link rel="stylesheet" href="CSS/crearcuenta.css">
+    <!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
 <body>
-<!--Encabezado-->
-<header id="encabezado">
+  <!--Encabezado-->
+  <header id="encabezado">
     <div></div>
     <div></div>
     <div></div>
@@ -85,11 +86,24 @@
     <div></div>
     <div></div>
 </header>
-<!--Cuerpo-->
-    <main id="mproducto" >
-        <img class="mantenimiento"  src="Imagenes/mantenimiento.png" alt="Pagina en mantenimiento">
-    </main>
 
+    <!--CUERPO-->
+    <main id="cuerpo" style="align-items: center;">
+        <h3 class="subtitulo" >
+            PERFIL
+        </h3>
+        <div class="formulario" style="align-items: center;">
+                <form >
+                    <h2 id="user_nombre"  class="datosPerfil"></h2>
+                    <h2 id="user_apellido" class="datosPerfil" ></h2>
+                    <h2 id="user_mail" class="datosPerfil" ></h2>
+                    <h2 id="user_dni" class="datosPerfil" ></h2>
+                    <h2 id="user_telefono" class="datosPerfil" ></h2>
+                    <h2 id="user_ocupacion" class="datosPerfil" ></h2>
+                </form>
+        </div>
+        
+    <main>
 <!--Pie-->
 <footer id="piesito">
     <div class="sigue ">
@@ -141,7 +155,7 @@
             <input type="text" id="suscribirme"placeholder="suscribete@hotmail.com" class="suscribirse">
         </form>
         <br>
-        <div class="boton">
+        <div>
             <a href="index.html" style="text-decoration:none;"><input type="submit" value="Suscribirse" class="btn btn-secondary me-md-2 "></a>
         </div>
         <br><br><br>
@@ -172,5 +186,6 @@
     </div>
     <div></div>
 </footer>
+    <script src="js/mostrar_perfil.js"></script>
 </body>
 </html>

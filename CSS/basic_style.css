@@ -445,8 +445,7 @@ body{margin: 0%;}
             height: 600px;
         }
 
-        /*Estilo de carrito */
-
+        /*Estilo de pagina producto*/
         .producto_style{
             background: white;
             height: 430px;
@@ -455,9 +454,16 @@ body{margin: 0%;}
             padding: 5%;
             font-size: 24px;
             text-align: left;
-        }   
-        .separacion{
-            margin: 5px;
+        }  
+        /*Estilo de carrito */
+        .modal-contenedor{
+            display:flex;
+            align-items: center;
+            gap:2rem;
         }
+        .img-carrito{
+            width:200px;
+            padding:20px;
+        } 
 }
 

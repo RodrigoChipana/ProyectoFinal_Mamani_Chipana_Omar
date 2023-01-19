@@ -1,142 +1,204 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pagina online de venta de productos usados en buen estado ">
-    <meta name="keywords" content="UNIQUE, PRODUCTOS, USADOS, BUEN, ESTADO, VENTA, BUZOS, PANTALONES, ZAPATILLAS, REMERAS">
+    <meta name="keywords"
+        content="UNIQUE, PRODUCTOS, USADOS, BUEN, ESTADO, VENTA, BUZOS, PANTALONES, ZAPATILLAS, REMERAS">
     <title>Unique</title>
     <link rel="stylesheet" href="CSS/basic_style.css">
     <link rel="stylesheet" href="CSS/index.css">
-<!--Unicons--><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!--Unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-  <!--Encabezado-->  
-  <header id="encabezado">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="perfil iconos" >
-        <a href="mantenimiento.html" style="text-decoration:none; color: white;">
-            <i class="uil uil-user-circle"></i>
-        </a>
-    </div>
-    <div class="container">
-    </div>
-    <div class="sell iconos ocultar" style="visibility: hidden">
-        <a href="mantenimiento.html" style="text-decoration:none; color: white;">
-            <i class="uil uil-tag-alt"></i>
-        </a>
-    </div>
-    <div class="titulo"  >
-        <h1 >
-            <a href="index.html" class="titulo" style="color: #daa520 !important;">UNIQUE</a>
-        </h1>
-    </div>
-    <div class="noti iconos"  style="visibility: hidden">
-        <a href="antenimiento.html" style="text-decoration:none; color: white;">
-            <i class="uil uil-bell"></i>
-        </a>
-    </div>
-    <div class="ccolor iconos ocultar"  style="visibility: hidden">
-        <a href="mantenimiento.html" style="text-decoration:none; color: white;">
-            <i class="uil uil-adjust"></i>
-        </a>
-    </div>
-    <div class="noti  dropdown iconos">
-       <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="--bs-btn-padding-y: .35rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .60rem; ">
-        <i class="uil uil-bars"></i>
-      </button>
-      <ul class=" men dropdown-menu ">
-        <li>
-            <button class="dropdown-item border" type="button">
-            <a href="mantenimiento.html" style="text-decoration:none; color: black;">Ingresar</a>
+    <!--Encabezado-->
+    <header id="encabezado">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="perfil iconos">
+            <a   style="text-decoration:none; color: white;">
+                <i class="uil uil-user-circle" ></i>
+            </a>
+        </div>
+        <div>
+            <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                <i class="bi bi-cart " id="carritoContenedor">0</i>
+            </a>
+        </div>
+        <div class="sell iconos ocultar" style="visibility: hidden">
+            <a href="mantenimiento.html" style="text-decoration:none; color: white;">
+                <i class="uil uil-tag-alt"></i>
+            </a>
+        </div>
+        <div class="titulo">
+            <h1>
+                <a href="index.html" class="titulo" style="color: #daa520 !important;">UNIQUE</a>
+            </h1>
+        </div>
+        <div class="noti iconos" style="visibility: hidden">
+            <a href="antenimiento.html" style="text-decoration:none; color: white;">
+                <i class="uil uil-bell"></i>
+            </a>
+        </div>
+        <div class="ccolor iconos ocultar" style="visibility: hidden">
+            <a href="mantenimiento.html" style="text-decoration:none; color: white;">
+                <i class="uil uil-adjust"></i>
+            </a>
+        </div>
+        <div class="noti  dropdown iconos">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="--bs-btn-padding-y: .35rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .60rem; ">
+                <i class="uil uil-bars"></i>
             </button>
-        </li>
-        <li>
-            <button class="dropdown-item" type="button">
-            <a href="mantenimiento.html" style="text-decoration:none; color: black;">Crear cuenta</a>
-            </button>
-        </li>
-        <li>
-            <button class="dropdown-item" type="button">
-            <a href="mantenimiento.html" style="text-decoration:none; color: black;">Verificar perfil</a>
-            </button>
-        </li>
-      </ul>
+            <ul class=" men dropdown-menu ">
+                <li>
+                    <button class="dropdown-item border" type="button">
+                        <a href="mostrar_perfil.html" style="text-decoration:none; color: black;">Mostrar perfil</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="dropdown-item" type="button">
+                        <a href="crear_cuenta.html" style="text-decoration:none; color: black;">Crear cuenta</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="dropdown-item" type="button">
+                        <a href="perfil.html" style="text-decoration:none; color: black;">Verificar perfil</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </header>
+   
+    <!--Carrito-->
+    <div class="container-xl ">
+        <div class="modal " tabindex="-1" role="dialog" id="modal">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content" style="background-color: whitesmoke;border: ridge; border-color: #daa520;width: 600px;" >
+                    <div class="modal-header" >
+                        <h5 class="modal-title" style="font-weight: bold;">Su carrito</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="background-color: white;"></div>
+                    <div class="modal-footer" style="background-color: whitesmoke;">
+                        <button type="button" class="btn btn-secondary" id="vaciarCarrito">
+                            Vaciar carrito
+                        </button>
+                        <button type="button" class="btn btn-secondary" id="procesarCompra">
+                            Continuar compra
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
+                            <span style="font-weight: bold;">TOTAL:</span>
+                            <p class="text-center" id="precioTotal" style="font-weight: bold;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</header>
-<!--Cuerpo-->
+
+    <!--Cuerpo-->
     <section id="cuerpo" class="cuerpoindex">
         <div class="buscador">
             <div class="espa1"></div>
             <div class="bus">
                 <form class="d-flex" role="search">
-                    <button class="btn btn-outline-dark" type="submit" >Buscar</button>
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  </form>
+                </form>
             </div>
             <div class="espa2"></div>
         </div>
         <div class="principal slider">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active ">
-                    <img src="Imagenes/Principales/11.jpg" class="d-block w-100 navgrande" alt="producto1" >
-                  </div>
-                  <div class="carousel-item ajustarima">
-                    <img src="Imagenes/Principales/22.jpg" class="d-block w-100 navgrande" alt="producto2" >
-                  </div>
-                  <div class="carousel-item ajustarima">
-                    <img src="Imagenes/Principales/33.jpg" class="d-block w-100 navgrande" alt="producto3" >
-                  </div>
+                    <div class="carousel-item active ">
+                        <img src="Imagenes/Principales/11.jpg" class="d-block w-100 navgrande" alt="producto1">
+                    </div>
+                    <div class="carousel-item ajustarima">
+                        <img src="Imagenes/Principales/22.jpg" class="d-block w-100 navgrande" alt="producto2">
+                    </div>
+                    <div class="carousel-item ajustarima">
+                        <img src="Imagenes/Principales/33.jpg" class="d-block w-100 navgrande" alt="producto3">
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
         </div>
         <div class="seccion seccionuno">
             <div class="semititulo">Zapatillas</div>
             <nav class="navminiaturas">
                 <div class="miniaturas">
-                    <a href="pages/productos/producto1.html"><img src="Imagenes/productos/zapatillas/1.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$2600</p>
+                    <a href="pages/productos/producto1.html"><img src="Imagenes/productos/zapatillas/1.jpg"
+                            alt="Zapatilla" class="miniatura"></a><br>Nike AIR<p class="precio">$2600</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(1)">Comprar</button>
                 </div>
                 <div class="miniaturas">
-                    <a href="pages/productos/producto2.html"><img src="Imagenes/productos/zapatillas/2.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$3300</p>
+                    <a href="pages/productos/producto2.html"><img src="Imagenes/productos/zapatillas/2.jpg"
+                            alt="Zapatilla" class="miniatura"></a><br>Nike AIR<p class="precio">$3300</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(2)">Comprar</button>
                 </div>
                 <div class="miniaturas">
-                    <a href="pages/productos/producto3.html"><img src="Imagenes/productos/zapatillas/3.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$3500</p>
+                    <a href="pages/productos/producto3.html"><img src="Imagenes/productos/zapatillas/3.jpg"
+                            alt="Zapatilla" class="miniatura"></a><br>Nike AIR<p class="precio">$3500</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(3)">Comprar</button>
                 </div>
                 <div class="miniaturas desaparecer">
-                    <a href="pages/productos/producto4.html"><img src="Imagenes/productos/zapatillas/4.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$3100</p>
+                    <a href="pages/productos/producto4.html"><img src="Imagenes/productos/zapatillas/4.jpg"
+                            alt="Zapatilla" class="miniatura"></a><br>Nike AIR<p class="precio">$3100</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(4)">Comprar</button>
                 </div>
                 <div class="miniaturas desaparecer desaparecermedio">
-                    <a href="pages/productos/producto5.html"><img src="Imagenes/productos/zapatillas/5.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$2800</p>
+                    <a href="pages/productos/producto5.html"><img src="Imagenes/productos/zapatillas/5.jpg"
+                            alt="Zapatilla" class="miniatura"></a><br>Nike AIR<p class="precio">$2800</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(5)">Comprar</button>
                 </div>
                 <div class="miniaturas desaparecer desaparecermedio">
-                    <a href="pages/productos/producto6.html"><img src="Imagenes/productos/zapatillas/6.jpg" alt="Zapatilla" class="miniatura" ></a><br>Nike AIR<p class="precio">$2400</p>
+                    <a href="pages/productos/producto6.html"><img src="Imagenes/productos/zapatillas/6.jpg"
+                            alt="Zapatilla" class="miniatura"></a><br>Nike AIR<p class="precio">$2400</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(6)">Comprar</button>
                 </div>
             </nav>
         </div>
@@ -144,22 +206,34 @@
             <div class="semititulo">Camperas</div>
             <nav class="navminiaturas">
                 <div class="miniaturas">
-                    <a href="pages/productos/producto7.html"><img src="Imagenes/productos/camperas/1.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$6500</p>
+                    <a href="pages/productos/producto7.html"><img src="Imagenes/productos/camperas/1.jpg" alt="campera"
+                            class="miniatura"></a><br>Campera<p class="precio">$6500</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(7)">Comprar</button>
                 </div>
                 <div class="miniaturas">
-                    <a href="pages/productos/producto8.html"><img src="Imagenes/productos/camperas/2.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$3500</p>
+                    <a href="pages/productos/producto8.html"><img src="Imagenes/productos/camperas/2.jpg" alt="campera"
+                            class="miniatura"></a><br>Campera<p class="precio">$3500</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(8)">Comprar</button>
                 </div>
                 <div class="miniaturas">
-                    <a href="pages/productos/producto9.html"><img src="Imagenes/productos/camperas/3.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$4500</p>
+                    <a href="pages/productos/producto9.html"><img src="Imagenes/productos/camperas/3.jpg" alt="campera"
+                            class="miniatura"></a><br>Campera<p class="precio">$4500</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(9)">Comprar</button>
                 </div>
                 <div class="miniaturas desaparecer">
-                    <a href="pages/productos/producto10.html"><img src="Imagenes/productos/camperas/4.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$3800</p>
+                    <a href="pages/productos/producto10.html"><img src="Imagenes/productos/camperas/4.jpg" alt="campera"
+                            class="miniatura"></a><br>Campera<p class="precio">$3800</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(10)">Comprar</button>
                 </div>
                 <div class="miniaturas desaparecer desaparecermedio">
-                    <a href="pages/productos/producto11.html"><img src="Imagenes/productos/camperas/5.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$4200</p>
+                    <a href="pages/productos/producto11.html"><img src="Imagenes/productos/camperas/5.jpg" alt="campera"
+                            class="miniatura"></a><br>Campera<p class="precio">$4200</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(11)">Comprar</button>
                 </div>
                 <div class="miniaturas desaparecer desaparecermedio">
-                    <a href="pages/productos/producto12.html"><img src="Imagenes/productos/camperas/6.jpg" alt="campera" class="miniatura" ></a><br>Campera<p class="precio">$5500</p>
+                    <a href="pages/productos/producto12.html"><img src="Imagenes/productos/camperas/6.jpg" alt="campera"
+                            class="miniatura"></a><br>Campera<p class="precio">$5500</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(12)">Comprar</button>
                 </div>
             </nav>
         </div>
@@ -167,107 +241,125 @@
             <div class="semititulo">Remeras</div>
             <nav class="navminiaturas">
                 <div class="miniaturas">
-                    <a href="pages/productos/producto13.html"><img src="Imagenes/productos/remeras/1.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$540</p>
+                    <a href="pages/productos/producto13.html"><img src="Imagenes/productos/remeras/1.jpg" alt="Remera"
+                            class="miniatura"></a><br>Remera<p class="precio">$540</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(13)">Comprar</button>
                 </div>
                 <div class="miniaturas">
-                    <a href="pages/productos/producto14.html"><img src="Imagenes/productos/remeras/2.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$400</p>
+                    <a href="pages/productos/producto14.html"><img src="Imagenes/productos/remeras/2.jpg" alt="Remera"
+                            class="miniatura"></a><br>Remera<p class="precio">$400</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(14)">Comprar</button>
                 </div>
                 <div class="miniaturas">
-                    <a href="pages/productos/producto15.html"><img src="Imagenes/productos/remeras/3.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$230</p>
+                    <a href="pages/productos/producto15.html"><img src="Imagenes/productos/remeras/3.jpg" alt="Remera"
+                            class="miniatura"></a><br>Remera<p class="precio">$230</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(15)">Comprar</button>
                 </div>
                 <div class="miniaturas desaparecer">
-                    <a href="pages/productos/producto16.html"><img src="Imagenes/productos/remeras/4.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$450</p>
+                    <a href="pages/productos/producto16.html"><img src="Imagenes/productos/remeras/4.jpg" alt="Remera"
+                            class="miniatura"></a><br>Remera<p class="precio">$450</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(16)">Comprar</button>
                 </div>
                 <div class="miniaturas desaparecer desaparecermedio">
-                    <a href="pages/productos/producto17.html"><img src="Imagenes/productos/remeras/5.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$940</p>
+                    <a href="pages/productos/producto17.html"><img src="Imagenes/productos/remeras/5.jpg" alt="Remera"
+                            class="miniatura"></a><br>Remera<p class="precio">$940</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(17)">Comprar</button>
                 </div>
                 <div class="miniaturas desaparecer desaparecermedio">
-                    <a href="pages/productos/producto18.html"><img src="Imagenes/productos/remeras/6.jpg" alt="Remera" class="miniatura" ></a><br>Remera<p class="precio">$120</p>
+                    <a href="pages/productos/producto18.html"><img src="Imagenes/productos/remeras/6.jpg" alt="Remera"
+                            class="miniatura"></a><br>Remera<p class="precio">$120</p>
+                    <button class="btn btn-dark botoncomprar" onclick="agregarProducto(18)">Comprar</button>
                 </div>
             </nav>
         </div>
     </section>
-<!--Pie-->
-<footer id="piesito">
-    <div class="sigue ">
-        <p >Síguenos en </p>
-    </div>
-    <div></div>
-    <div class="contac ocultar">
-        <p >Contactanos </p>
-    </div>
-    <div>
-        <ul class="social ">
-            <div class="iconoytexto">
-                <a href="https://www.facebook.com/" style="text-decoration:none; color: white;" >
-                    <li class="face defaulticonofooter"><img src="Imagenes/iconos/facebook.png" alt="facebook"></li>
-                </a>
-                <a href="https://www.facebook.com/" style="text-decoration:none; color: white;" >
-                    <p class="defaulttextofooter">Facebook</p>
-                </a>
-            </div>
-            <div class="iconoytexto">
-                <a href="https://twitter.com/" style="text-decoration:none; color: white;" >
-                    <li class="twi defaulticonofooter"><img src="Imagenes/iconos/twitter.png" alt="twitter"></li>
-                </a>
-                <a href="https://twitter.com/" style="text-decoration:none; color: white;" >
-                    <p class="defaulttextofooter">Twitter</p>
-                </a>   
-            </div>
-            <div class="iconoytexto">
-                <a href="https://www.instagram.com/" style="text-decoration:none; color: white;" >
-                    <li class="you defaulticonofooter"><img src="Imagenes/iconos/instagram.png" alt="instagram"></li>
-                 </a> 
-                 <a href="https://www.instagram.com/" style="text-decoration:none; color: white;" >
-                    <p class="defaulttextofooter">Instagram</p>
-                </a>
-            </div>
-            <div class="iconoytexto">
-                <a href="https://www.youtube.com/" style="text-decoration:none; color: white;" >
-                    <li class="ins defaulticonofooter"><img src="Imagenes/iconos/youtube.png" alt="youtube"></li>
-                </a>
-                <a href="https://www.youtube.com/" style="text-decoration:none; color: white;" >
-                    <p class="defaulttextofooter">Youtube</p>
-                </a>
-            </div>
-        </ul>
-    </div>
-    <div class="textofooter desaparecer ">
-        <p>¿Quieres recibir las últimas noticias que publiquemos en UNIQUE?</p>
-        <form >
-            <input type="text" id="suscribirme"placeholder="suscribete@hotmail.com" class="suscribirse">
-        </form>
-        <br>
-        <div class="boton">
-            <a href="index.html" style="text-decoration:none;"><input type="submit" value="Suscribirse" class="btn btn-secondary me-md-2 "></a>
+    <!--Pie-->
+    <footer id="piesito">
+        <div class="sigue ">
+            <p>Síguenos en </p>
         </div>
-        <br><br><br>
-    </div>
-    <div class="contactos desaparecer contacto">
-        <ul class="social">
-            <div class="iconoytexto">
-                <li class="cel defaulticonofooter"><img src="Imagenes/iconos/phone.png" alt="telefono"></li>
-                <p class="defaulttextofooter">+549 11-2616-6681</p>
+        <div></div>
+        <div class="contac ocultar">
+            <p>Contactanos </p>
+        </div>
+        <div>
+            <ul class="social ">
+                <div class="iconoytexto">
+                    <a href="https://www.facebook.com/" style="text-decoration:none; color: white;">
+                        <li class="face defaulticonofooter"><img src="Imagenes/iconos/facebook.png" alt="facebook"></li>
+                    </a>
+                    <a href="https://www.facebook.com/" style="text-decoration:none; color: white;">
+                        <p class="defaulttextofooter">Facebook</p>
+                    </a>
+                </div>
+                <div class="iconoytexto">
+                    <a href="https://twitter.com/" style="text-decoration:none; color: white;">
+                        <li class="twi defaulticonofooter"><img src="Imagenes/iconos/twitter.png" alt="twitter"></li>
+                    </a>
+                    <a href="https://twitter.com/" style="text-decoration:none; color: white;">
+                        <p class="defaulttextofooter">Twitter</p>
+                    </a>
+                </div>
+                <div class="iconoytexto">
+                    <a href="https://www.instagram.com/" style="text-decoration:none; color: white;">
+                        <li class="you defaulticonofooter"><img src="Imagenes/iconos/instagram.png" alt="instagram">
+                        </li>
+                    </a>
+                    <a href="https://www.instagram.com/" style="text-decoration:none; color: white;">
+                        <p class="defaulttextofooter">Instagram</p>
+                    </a>
+                </div>
+                <div class="iconoytexto">
+                    <a href="https://www.youtube.com/" style="text-decoration:none; color: white;">
+                        <li class="ins defaulticonofooter"><img src="Imagenes/iconos/youtube.png" alt="youtube"></li>
+                    </a>
+                    <a href="https://www.youtube.com/" style="text-decoration:none; color: white;">
+                        <p class="defaulttextofooter">Youtube</p>
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <div class="textofooter desaparecer ">
+            <p>¿Quieres recibir las últimas noticias que publiquemos en UNIQUE?</p>
+            <form>
+                <input type="text" id="suscribirme" placeholder="suscribete@hotmail.com" class="suscribirse">
+            </form>
+            <br>
+            <div class="boton">
+                <a href="index.html" style="text-decoration:none;"><input type="submit" value="Suscribirse"
+                        class="btn btn-secondary me-md-2 "></a>
             </div>
-            <div class="iconoytexto">
-                <li class="wsa defaulticonofooter"><img src="Imagenes/iconos/whatsapp.png" alt="whatsapp"></li>
-                <p class="defaulttextofooter">11-2616-6681</p>
-            </div>
-            <div class="iconoytexto">
-                <li class="lin defaulticonofooter"><img src="Imagenes/iconos/telegram.png" alt="telegram"></li>
-                <p class="defaulttextofooter">11-2616-6681</p>
-            </div>
-            <div class="iconoytexto">
-                <li class="mai defaulticonofooter"><img src="Imagenes/iconos/mail.png" alt="mail"></li>
-                <p class="defaulttextofooter">rodrigochipana95@gmail.com</p>
-            </div>
-        </ul>
-    </div>
-    <div></div>
-    <div class="textofooter desaparecer copyr">
-        <p>Copyright &copy;2022 UNIQUE designed by Rodrigo Chipana</p>
-    </div>
-    <div></div>
-</footer>
+            <br><br><br>
+        </div>
+        <div class="contactos desaparecer contacto">
+            <ul class="social">
+                <div class="iconoytexto">
+                    <li class="cel defaulticonofooter"><img src="Imagenes/iconos/phone.png" alt="telefono"></li>
+                    <p class="defaulttextofooter">+549 11-2616-6681</p>
+                </div>
+                <div class="iconoytexto">
+                    <li class="wsa defaulticonofooter"><img src="Imagenes/iconos/whatsapp.png" alt="whatsapp"></li>
+                    <p class="defaulttextofooter">11-2616-6681</p>
+                </div>
+                <div class="iconoytexto">
+                    <li class="lin defaulticonofooter"><img src="Imagenes/iconos/telegram.png" alt="telegram"></li>
+                    <p class="defaulttextofooter">11-2616-6681</p>
+                </div>
+                <div class="iconoytexto">
+                    <li class="mai defaulticonofooter"><img src="Imagenes/iconos/mail.png" alt="mail"></li>
+                    <p class="defaulttextofooter">rodrigochipana95@gmail.com</p>
+                </div>
+            </ul>
+        </div>
+        <div></div>
+        <div class="textofooter desaparecer copyr">
+            <p>Copyright &copy;2022 UNIQUE designed by Rodrigo Chipana</p>
+        </div>
+        <div></div>
+    </footer>
+    <script src="js/stock.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
