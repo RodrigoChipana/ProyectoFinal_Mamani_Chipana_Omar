@@ -28,7 +28,7 @@ function enviarCompra(e){
           formulario.reset();
           window.location = "index.html";
           },2000)
-        },3000)
+        },1000)
         
     }
   }

@@ -25,4 +25,6 @@ function mostrar_perfil(){
     const ocupacion = document.getElementById("user_ocupacion");
     ocupacion.textContent = `Ocupacion: ${verificacion_persona.ocupacion}`
 
+    
 }
+
