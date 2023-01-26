@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "SAMSUNG"
+    },
+    {
+        "id": 1,
+        "name": "MOVISTAR"
+    },
+    {
+        "id": 2,
+        "name": "COMPUTRABAJO"
+    },
+    {
+        "id": 3,
+        "name": "ELDARS"
+    },
+    {
+        "id": 4,
+        "name": "LENOVO"
+    },
+    {
+        "id": 5,
+        "name": "TARGUS"
+    },
+    {
+        "id": 6,
+        "name": "INTEL"
+    },
+    {
+        "id": 7,
+        "name": "META"
+    },
+    {
+        "id": 8,
+        "name": "IPLAN"
+    },
+    {
+        "id": 9,
+        "name": "MAS GLOBAL"
+    },
+    {
+        "id": 10,
+        "name": "CIUDAD DE BUENOS AIRES"
+    }
+]

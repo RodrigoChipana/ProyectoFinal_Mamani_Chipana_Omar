@@ -1,0 +1,32 @@
+.partners{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    align-items: center;
+}
+.subtituloP{
+    padding-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+div{
+text-align: center;
+}
+ul{
+    list-style: none;
+}
+.stylePartners{
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+main ul li{
+    border: 2px solid #daa520;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 42%;
+    margin-left: 40%;
+    padding-right: 0%;
+    padding-top: 5px;
+}
