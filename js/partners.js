@@ -11,6 +11,7 @@ const lista = document.querySelector('#list')
     const li = document.createElement('li')
     li.innerHTML = `
     <h4>${marca.name}</h4>
+    <img src= '${marca.image}' class="iconoP"></img>
     `
     lista.append(li)
     })

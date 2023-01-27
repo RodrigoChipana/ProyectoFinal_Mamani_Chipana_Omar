@@ -1,46 +1,57 @@
 [
     {
         "id": 1,
-        "name": "SAMSUNG"
+        "name": "SAMSUNG",
+        "image":"https://i.postimg.cc/3rScFc0m/samsung.png"
     },
     {
         "id": 1,
-        "name": "MOVISTAR"
+        "name": "MOVISTAR",
+        "image":"https://i.postimg.cc/5j8dQB3s/movistar.jpg[/img"
     },
     {
         "id": 2,
-        "name": "COMPUTRABAJO"
+        "name": "COMPUTRABAJO",
+        "image":"https://i.postimg.cc/KR56JmCL/computrabajo.jpg[/img"
     },
     {
         "id": 3,
-        "name": "ELDARS"
+        "name": "ELDARS",
+        "image":"https://i.postimg.cc/gxkf7fP7/eldars.jpg[/img"
     },
     {
         "id": 4,
-        "name": "LENOVO"
+        "name": "LENOVO",
+        "image":"https://i.postimg.cc/gxSfbNz2/lenovo.png[/img"
     },
     {
         "id": 5,
-        "name": "TARGUS"
+        "name": "TARGUS",
+        "image":"https://i.postimg.cc/QBFv81Ck/targus.png[/img"
     },
     {
         "id": 6,
-        "name": "INTEL"
+        "name": "INTEL",
+        "image":"https://i.postimg.cc/HJFRVn7G/intel.png[/img"
     },
     {
         "id": 7,
-        "name": "META"
+        "name": "META",
+        "image":"https://i.postimg.cc/R6f8fmcW/meta.png[/img"
     },
     {
         "id": 8,
-        "name": "IPLAN"
+        "name": "IPLAN",
+        "image":"https://i.postimg.cc/8fm0KbXD/iplan.png[/img"
     },
     {
         "id": 9,
-        "name": "MAS GLOBAL"
+        "name": "MAS GLOBAL",
+        "image":"https://i.postimg.cc/XBbPkP8Q/masglobal.jpg[/img"
     },
     {
         "id": 10,
-        "name": "CIUDAD DE BUENOS AIRES"
+        "name": "CIUDAD DE BUENOS AIRES",
+        "image":"https://i.postimg.cc/Y05jwx0R/ciudad.png"
     }
 ]

@@ -17,7 +17,6 @@ function mostrar_perfil(){
     const dni = document.getElementById("user_dni");
     dni.textContent = `DNI: ${verificacion_persona.dni}`
 
-    console.log(persona.nombre)
 
     const telefono = document.getElementById("user_telefono");
     telefono.textContent = `Telefono: ${verificacion_persona.telefono}`

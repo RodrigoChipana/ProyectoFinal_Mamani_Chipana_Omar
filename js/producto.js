@@ -23,7 +23,6 @@ const mostrarCarrito = () => {
       modalBody.innerHTML = "";
       carrito.forEach((prod) => {
         const { id, nombre, precio, desc, img, cantidad } = prod;
-        console.log(modalBody);
         modalBody.innerHTML += `
         <div class="modal-contenedor">
           <div>
@@ -41,12 +40,10 @@ const mostrarCarrito = () => {
     }
     //Verifico que hay algun producto en el carrito
     if (carrito.length === 0) {
-      console.log("No hay producto");
       modalBody.innerHTML = `
       <p class="text-center text-secondary parrafo">No hay ningun producto en tu carrito</p>
       `;
     } else {
-      console.log("Se ingresaron correctamente los productos");
     }
     carritoContenedor.textContent = carrito.length;
     //Calculo el precio total
